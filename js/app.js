@@ -2,7 +2,7 @@ var skl_y = document.getElementById('skills').offsetTop ;
 
 var scrolls = document.getElementsByClassName('progress') ;
 
-var txt = ['Web developer','Web designer'] ;
+var txt = ['Web developer','Web designer','Android Developer','UI/UX Designer'] ;
 var cgtxt = document.getElementById('des-chang') ;
 cgtxt.classList.add('slideitUp') ;
 
@@ -18,12 +18,12 @@ var index = 1 ;
 function animDescription(){
   
 
-  cgtxt.innerHTML = [txt[index % 2]] ;
+  cgtxt.innerHTML = [txt[index % 4]] ;
   index ++ ;
   
   (cgtxt.classList.contains('slideitUp'))?cgtxt.classList.remove('slideitUp') : cgtxt.classList.add('slideitUp');
   (cgtxt.classList.contains('slideitUp2'))?cgtxt.classList.remove('slideitUp2') : cgtxt.classList.add('slideitUp2');
-  
+
   
 }
 
